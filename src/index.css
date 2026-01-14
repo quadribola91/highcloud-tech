@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.animate-bg-left {
+  animation: slideLeftToRight 20s ease-in-out infinite alternate;
+}
+
+.animate-bg-right {
+  animation: slideRightToLeft 25s ease-in-out infinite alternate;
+}
