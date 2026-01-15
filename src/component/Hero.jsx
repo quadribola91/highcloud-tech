@@ -43,13 +43,16 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-primary hover:bg-primaryDark text-white px-8 py-3 rounded-lg font-medium transition">
-            Get Started
-          </button>
-
-          <button className="border border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition">
-            Free Consultation
-          </button>
+          <a href="#about">
+            <button className="bg-primary hover:bg-primaryDark text-white px-8 py-3 rounded-lg font-medium transition">
+              Get Started
+            </button>
+          </a>
+          <a href="#contact">
+            <button className="border border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-medium transition">
+              Free Consultation
+            </button>
+          </a>
         </div>
       </ScrollReveal>
     </section>
