@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 export default function Services() {
   const services = [
     {
@@ -42,7 +44,7 @@ export default function Services() {
     <section id="services" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-14 animate-fade-in">
+        <ScrollReveal className="text-center mb-14" once>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Our Services
           </h2>
@@ -50,23 +52,22 @@ export default function Services() {
             Highcloud Tech delivers reliable, scalable, and secure technology
             solutions designed to help your business grow.
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Services Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 animate-slide-up"
-            >
-              <div className="text-4xl mb-5">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {service.description}
-              </p>
-            </div>
+            <ScrollReveal key={index} delay={index * 80}>
+              <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1">
+                <div className="text-4xl mb-5">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

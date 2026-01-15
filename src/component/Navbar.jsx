@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import { useState, useEffect } from "react";
+import Highlogo from "../assets/Highlogo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,26 +23,37 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/80"
-      } backdrop-blur`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+        ${scrolled ? "bg-white shadow-md" : "bg-white/80"}
+        backdrop-blur`}
     >
       {/* NAV CONTAINER */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="flex h-16 items-center justify-between">
-          {/* LOGO */}
-          <div className="flex items-center gap-2">
-            {/* <img
-              src="/logo.png"
-              alt="Highcloud Tech"
-              className="h-8 w-8 sm:h-9 sm:w-9 object-contain"
-            /> */}
-            <a href="#home">
-              <span className="text-lg sm:text-xl font-bold text-primary">
-                Highcloud Tech
-              </span>
-            </a>
-          </div>
+          {/* LOGO SECTION */}
+          <a href="#home" className="flex items-center gap-2">
+            <img
+              src={Highlogo}
+              alt="Highcloud Tech Logo"
+              className="
+                h-8 w-auto
+                sm:h-9
+                md:h-10
+                object-contain
+              "
+            />
+
+            {/* Brand text (responsive) */}
+            <span
+              className="
+                text-base font-bold text-primary
+                hidden sm:inline
+                sm:text-lg
+              "
+            >
+              HighTech
+            </span>
+          </a>
 
           {/* DESKTOP NAV */}
           <ul className="hidden md:flex items-center gap-8 text-sm lg:text-base font-medium text-gray-700">
@@ -58,7 +70,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* MOBILE TOGGLE */}
+          {/* MOBILE MENU TOGGLE */}
           <button
             className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100"
             onClick={() => setIsOpen(!isOpen)}
@@ -99,9 +111,9 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden overflow-hidden transition-all duration-300
+          ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}
+        `}
       >
         <ul className="flex flex-col gap-4 px-6 py-6 text-sm font-medium text-gray-700 bg-white shadow-inner">
           {navItems.map((item) => (
