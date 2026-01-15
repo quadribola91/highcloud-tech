@@ -2,11 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./public/favicon.ico" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>highcloud-tech</title>
-    <!-- Google Analytics -->
+
+    <!-- Title & Description for SEO -->
+    <title>
+      Highcloud Tech – Modern Digital Solutions for Growing Businesses
+    </title>
+    <meta
+      name="description"
+      content="Highcloud Tech builds fast, secure, and modern digital solutions. Websites, systems, and support tailored to growing businesses."
+    />
+    <meta
+      name="keywords"
+      content="Highcloud Tech, IT solutions, web development, digital services, business IT support"
+    />
+    <meta name="author" content="Highcloud Tech" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta
+      property="og:title"
+      content="Highcloud Tech – Modern Digital Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Highcloud Tech builds fast, secure, and modern digital solutions for growing businesses."
+    />
+    <meta property="og:image" content="/social-share-image.png" />
+    <meta property="og:url" content="https://highcloud-tech.vercel.app" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Highcloud Tech – Modern Digital Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Highcloud Tech builds fast, secure, and modern digital solutions for growing businesses."
+    />
+    <meta name="twitter:image" content="/social-share-image.png" />
+
+    <!-- Google Analytics (GA4) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-1KQJLF2NJ7"
@@ -17,10 +59,29 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
+      gtag("config", "G-1KQJLF2NJ7", { anonymize_ip: true });
+    </script>
 
-      gtag("config", "G-1KQJLF2NJ7", {
-        anonymize_ip: true,
-      });
+    <!-- Structured Data (Organization Schema) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Highcloud Tech",
+        "url": "https://highcloud-tech.vercel.app",
+        "logo": "https://highcloud-tech.vercel.app/favicon.ico",
+        "sameAs": [
+          "https://www.linkedin.com/in/quadribola91",
+          "https://twitter.com/highcloudtech"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+2349058824643",
+            "contactType": "Customer Service"
+          }
+        ]
+      }
     </script>
   </head>
   <body>
