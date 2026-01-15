@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 /**
  * ScrollReveal
  * Animates elements when they enter/leave the viewport
- * 
+ *
  * Props:
  *   - children: React nodes to animate
  *   - className: Additional CSS classes for the wrapper

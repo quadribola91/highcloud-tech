@@ -3,9 +3,12 @@ import { useState } from "react";
 export default function WhatsAppChat() {
   const [isOpen, setIsOpen] = useState(false);
   const phoneNumber = "2349058824643"; // Your WhatsApp number (Nigeria +234)
-  const defaultMessage = "Hi Highcloud Tech! I have a question about your services.";
+  const defaultMessage =
+    "Hi Highcloud Tech! I have a question about your services.";
 
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    defaultMessage
+  )}`;
 
   return (
     <>
@@ -34,7 +37,9 @@ export default function WhatsAppChat() {
           <div className="bg-green-500 text-white p-4 flex items-center justify-between">
             <div>
               <h3 className="font-bold text-lg">Highcloud Tech</h3>
-              <p className="text-xs text-green-100">Typically replies instantly</p>
+              <p className="text-xs text-green-100">
+                Typically replies instantly
+              </p>
             </div>
             <button
               onClick={() => setIsOpen(false)}
@@ -50,7 +55,8 @@ export default function WhatsAppChat() {
             <div className="mb-4 p-3 bg-green-100 rounded-lg text-sm text-gray-800">
               <p className="font-semibold text-green-700 mb-1">Hi there! 👋</p>
               <p>
-                Welcome to Highcloud Tech. How can we help you today? Click the button below to start chatting with us on WhatsApp.
+                Welcome to Highcloud Tech. How can we help you today? Click the
+                button below to start chatting with us on WhatsApp.
               </p>
             </div>
           </div>

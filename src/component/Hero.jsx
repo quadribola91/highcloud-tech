@@ -27,7 +27,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
-      <ScrollReveal className="relative z-10 max-w-6xl mx-auto px-6 text-center" once origin="up" duration={900}>
+      <ScrollReveal
+        className="relative z-10 max-w-6xl mx-auto px-6 text-center"
+        once
+        origin="up"
+        duration={900}
+      >
         <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
           We build fast, secure, and modern digital solutions
           <span className="text-primary"> for growing businesses</span>.
