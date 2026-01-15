@@ -34,10 +34,10 @@ export default function Contact() {
                 <p>
                   <span className="font-medium">Email:</span>{" "}
                   <a
-                    href="mailto:quadribola91@gmail.com"
+                    href="mailto:technologies.highcloud@gmail.com"
                     className="text-primary hover:underline"
                   >
-                    quadribola91@gmail.com
+                    technologies.highcloud@gmail.com
                   </a>
                 </p>
 
@@ -61,7 +61,7 @@ export default function Contact() {
           {/* Contact Form */}
           <ScrollReveal delay={80}>
             <form
-              action="mailto:quadribola91@gmail.com"
+              action="mailto:technologies.highcloud@gmail.com"
               method="POST"
               encType="text/plain"
               className="bg-white rounded-xl shadow-lg p-8 space-y-6"

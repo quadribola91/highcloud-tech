@@ -62,7 +62,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>Email: quadribola91@gmail.com</li>
+              <li>Email: technologies.highcloud@gmail.com</li>
               <li>Phone: +234 905 882 4643</li>
               <li>Lagos, Nigeria</li>
             </ul>
